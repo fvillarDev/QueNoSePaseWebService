@@ -28,7 +28,7 @@ namespace QueNoSePaseWebService
         [WebMethod]
         public string GetPuestosRecarga(string a, string b, string c)
         {
-            if (!Helper.Helper.Validate(a, b)) return "ERROR";
+            //if (!Helper.Helper.Validate(a, b)) return "ERROR";
 
             try
             {
