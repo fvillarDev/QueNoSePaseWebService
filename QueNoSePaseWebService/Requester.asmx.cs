@@ -20,6 +20,12 @@ namespace QueNoSePaseWebService
     public class Requester : WebService
     {
         [WebMethod]
+        public string KeepAlive()
+        {
+            return "OK";
+        }
+
+        [WebMethod]
         public string GetPuestosRecarga(string a, string b, string c)
         {
             if (!Helper.Helper.Validate(a, b)) return "ERROR";
