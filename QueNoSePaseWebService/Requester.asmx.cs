@@ -39,7 +39,7 @@ namespace QueNoSePaseWebService
 
                 var doc = new XmlDocument();
                 doc.LoadXml(result.Replace("<?xml version=\"1.0\"?>\n", ""));
-                var json = JsonConvert.SerializeObject(doc.DocumentElement.InnerXml);
+                var json = JsonConvert.SerializeXmlNode(doc.DocumentElement);
 
                 return json;
             }
